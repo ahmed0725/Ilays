@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Semester 5 | Ilays University</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Logo" class="logo">
+        <div>
+          <h1>Ilays University</h1>
+          <p class="tag">Computer Science — Semester 5</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact-section">
+      <h2>Contact & Feedback</h2>
+      <p>Use the form below to send a message. (Client-side only — to get real email handling add a backend or use Formspree / Netlify forms.)</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>
+          <span>Your name</span>
+          <input type="text" id="name" required placeholder="Your full name">
+        </label>
+
+        <label>
+          <span>Your email</span>
+          <input type="email" id="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea id="message" rows="6" required placeholder="Write your message here"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="reset" class="btn btn-outline">Reset</button>
+        </div>
+
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Ilays University</h4>
+        <p>Contact: info@ilays.edu</p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; <span id="year5"></span> Ilays University — Semester 5</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

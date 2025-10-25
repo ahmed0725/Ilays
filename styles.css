@@ -1,0 +1,81 @@
+
+/* Dark theme styles for Ilays University Semester 5 site */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#e6eef8; background:#0b1220; }
+
+/* Layout helpers */
+.container { max-width:1100px; margin:0 auto; padding:1rem; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.brand { display:flex; align-items:center; gap:0.75rem; }
+.logo { width:56px; height:56px; object-fit:cover; border-radius:8px; }
+
+/* Header/nav */
+.site-header { background: linear-gradient(180deg, #071128 0%, #081827 100%); color:#e6eef8; padding:0.65rem 0; position:sticky; top:0; z-index:50; box-shadow:0 2px 8px rgba(0,0,0,0.6); }
+.site-header h1 { font-size:1.05rem; margin-bottom:0.15rem; color:#fff; }
+.site-header .tag { font-size:0.8rem; opacity:0.85; color:#9fb3d8; }
+
+.main-nav { display:flex; align-items:center; gap:1rem; }
+.nav-list { list-style:none; display:flex; gap:0.5rem; align-items:center; }
+.nav-list li a { color:#cfe6ff; text-decoration:none; padding:0.5rem 0.7rem; border-radius:6px; display:inline-block; font-weight:600; opacity:0.95; }
+.nav-list li a:hover, .nav-list li a.active { background:rgba(255,255,255,0.04); box-shadow:0 4px 12px rgba(2,6,23,0.6); }
+
+.nav-toggle { display:none; background:transparent; border:0; color:#cfe6ff; font-size:1.3rem; }
+
+/* Hero */
+.hero { padding:2.25rem 0; }
+.hero-grid { display:grid; grid-template-columns:1fr 340px; gap:1.25rem; align-items:start; }
+.hero-text h2 { font-size:2rem; margin-bottom:0.5rem; color:#7cc6ff; }
+.hero-text p { color:#cfe6ff; line-height:1.5; margin-bottom:1rem; opacity:0.95; }
+.hero-card { background:#071428; padding:1rem; border-radius:12px; box-shadow: 0 8px 30px rgba(2,6,23,0.7); border:1px solid rgba(255,255,255,0.03); }
+.info-list { list-style:none; padding-left:0.25rem; color:#cfe6ff; }
+
+/* Buttons */
+.btn { display:inline-block; background:#1f78d1; color:white; padding:0.55rem 0.95rem; border-radius:8px; text-decoration:none; font-weight:700; }
+.btn-outline { background:transparent; border:2px solid #1f78d1; color:#1f78d1; }
+
+/* Features */
+.features { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.5rem; }
+.feature { background:#081428; padding:1rem; border-radius:10px; box-shadow:0 12px 30px rgba(2,6,23,0.6); }
+
+/* Announcements */
+.announcements { margin:1.5rem 0 3rem; }
+.announcement-list { display:grid; gap:0.75rem; }
+.announcement { background:#081428; padding:0.9rem; border-radius:8px; color:#cfe6ff; }
+
+/* Courses */
+.course-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-top:1rem; }
+.course-card { background:#081428; padding:1rem; border-radius:10px; box-shadow:0 12px 30px rgba(2,6,23,0.6); }
+
+/* Members */
+.members-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1rem; margin-top:1rem; }
+.member-card { background:#0c2130; padding:0.85rem; border-radius:10px; text-align:center; cursor:pointer; box-shadow:0 12px 30px rgba(2,6,23,0.6); transition:transform .18s ease; }
+.member-card:hover, .member-card:focus { transform:translateY(-6px); outline:none; }
+.member-card img { width:90px; height:90px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 0.5rem; border:2px solid rgba(255,255,255,0.04); }
+
+/* Modal */
+.modal { position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(2,6,23,0.75); padding:1rem; z-index:2000; }
+.modal.open { display:flex; }
+.modal-content { background:#071428; padding:1.25rem; border-radius:10px; max-width:420px; width:100%; position:relative; text-align:center; color:#cfe6ff; box-shadow:0 20px 60px rgba(2,6,23,0.8); }
+.modal-content img { width:110px; height:110px; object-fit:cover; border-radius:50%; margin-bottom:.5rem; border:3px solid rgba(255,255,255,0.04); }
+.modal-close { position:absolute; top:8px; right:8px; background:transparent; border:0; font-size:1.1rem; cursor:pointer; color:#cfe6ff; }
+
+/* Contact form */
+.contact-form { background:#071428; padding:1rem; border-radius:10px; box-shadow:0 12px 30px rgba(2,6,23,0.6); max-width:760px; }
+.contact-form label { display:block; margin-bottom:0.6rem; color:#cfe6ff; }
+.contact-form input, .contact-form textarea { width:100%; padding:0.6rem; border-radius:8px; border:1px solid rgba(255,255,255,0.04); font-size:0.95rem; background:#06121b; color:#e6eef8; }
+.form-actions { margin-top:0.6rem; display:flex; gap:0.5rem; align-items:center; }
+.form-msg { margin-top:0.6rem; color: #86efac; }
+
+/* Footer */
+.site-footer { margin-top:2rem; padding:1.2rem 0; background:#03111a; border-top:1px solid rgba(255,255,255,0.02); color:#9fb3d8; }
+.footer-grid { display:flex; justify-content:space-between; gap:1rem; align-items:flex-start; flex-wrap:wrap; }
+.footer-bottom { text-align:center; padding-top:0.6rem; font-size:0.9rem; color:#7b8fa6; }
+
+/* Responsive */
+@media (max-width:900px) {
+  .hero-grid { grid-template-columns:1fr; }
+  .features { grid-template-columns:1fr; }
+  .nav-list { display:none; position:absolute; right:0; top:64px; background:linear-gradient(180deg,#071128,#081827); padding:1rem; border-radius:8px; box-shadow:0 8px 22px rgba(2,6,23,0.9); }
+  .nav-list.show { display:flex; flex-direction:column; gap:0.25rem; }
+  .nav-toggle { display:inline-block; }
+}

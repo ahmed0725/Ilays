@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Members — Semester 5 | Ilays University</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Logo" class="logo">
+        <div>
+          <h1>Ilays University</h1>
+          <p class="tag">Computer Science — Semester 5</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="members.html" class="active">Members</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Class Members</h2>
+      <p>Click a profile to view details (placeholder data — replace with real student info).</p>
+
+      <div class="members-grid">
+        <div class="member-card" tabindex="0" data-name="Ahmed Abdi" data-email="ahmed@example.com" data-bio="Class representative.">
+          <img src="assets/images/student1.png" alt="Ahmed Abdi">
+          <h4>Ahmed Abdi</h4>
+          <p>Class Representative</p>
+        </div>
+
+        <div class="member-card" tabindex="0" data-name="Fatima Osman" data-email="fatima@example.com" data-bio="Group leader for DBMS project.">
+          <img src="assets/images/student2.png" alt="Fatima Osman">
+          <h4>Fatima Osman</h4>
+          <p>Project Lead</p>
+        </div>
+
+        <div class="member-card" tabindex="0" data-name="Mohamed Ali" data-email="mohamed@example.com" data-bio="Network lab assistant.">
+          <img src="assets/images/student3.png" alt="Mohamed Ali">
+          <h4>Mohamed Ali</h4>
+          <p>Network Assistant</p>
+        </div>
+
+      </div>
+    </section>
+
+    <div id="profileModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Close profile">✕</button>
+        <img id="modalImg" src="assets/images/student1.png" alt="">
+        <h3 id="modalName">Name</h3>
+        <p id="modalRole">Role</p>
+        <p id="modalBio">Bio</p>
+        <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Ilays University</h4>
+        <p>Contact: info@ilays.edu</p>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; <span id="year4"></span> Ilays University — Semester 5</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
